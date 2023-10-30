@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="DinnerDecider" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <ImageView
+        android:id="@+id/dinnerLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dd_logo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvDinnerName"
+        android:text="Click DECIDE button!"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <EditText
+        android:id="@+id/etAddFood"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="add new food..."
+        android:inputType="text"
+        android:layout_marginLeft="100dp"
+        android:textSize="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/btnAddFood"
+        android:layout_width="200dp"
+        android:layout_marginLeft="100dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="ADD FOOD" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <Button
+        android:id="@+id/btnDecide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:text="DECIDE!" />
+</LinearLayout>
