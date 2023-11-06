@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:orientation="vertical"
+    android:stretchColumns="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:typeface="serif"
+            android:gravity="center_horizontal"
+            android:text="Table Layout Test"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            ></TextView>
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/and_ver"
+            android:layout_height="wrap_content"
+            android:textColorHint="#DAD0D0"
+            android:height="48dp"
+            android:hint="Enter Android version"
+            />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/and_codename"
+            android:layout_height="wrap_content"
+            android:textColorHint="#DAD0D0"
+            android:height="48dp"
+            android:hint="Enter Android Code Name" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent">
+        <Button
+            android:layout_span="2"
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD" />
+    </TableRow>
+
+    <!-- Static row 1 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Android 1.1"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Petit Four"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:padding="5dp" />
+    </TableRow>
+
+    <!-- Static row 2 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Android 1.5"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cupcake"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:padding="5dp" />
+    </TableRow>
+
+</TableLayout>
