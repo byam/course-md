@@ -13,13 +13,54 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign in to your account"
+        android:text="Create your account"
         android:textSize="25sp"
         android:textColor="@color/black"
         android:gravity="center_horizontal"
         android:padding="5dp"
         android:layout_marginBottom="30dp"
         />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="First name (required)"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Last name (required)"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        />
+
 
     <TextView
         android:layout_width="300dp"
@@ -60,52 +101,14 @@
         android:inputType="textPassword"
         android:maxLines="1" />
 
-    <TextView
-        android:id="@+id/forgot_password"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Forgot password?"
-        android:textSize="12sp"
-        android:textColor="@color/black"
-        android:layout_gravity="center_horizontal"
-        android:gravity="right"
-        android:padding="5dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:autoLink="all"
-        android:focusable="true"
-        />
-
-    <Button
-        android:id="@+id/sign_in_button"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Sign in"
-        android:background="@color/blue"
-        android:textColor="@color/white"
-        android:layout_marginTop="16dp"/>
-
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:text="Don't have an account?"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="20dp"
-        />
-
     <Button
         android:id="@+id/create_account_button"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Create a new account"
-        android:background="@color/white"
-        android:textColor="@color/blue"
-        android:layout_marginTop="8dp"/>
+        android:text="Create Account"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>
