@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3pt"
+    android:background="@color/gray"
+    >
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="118dp"
+        android:layout_height="50pt"
+        android:src="@drawable/icons8_electronics"
+        android:contentDescription="Shop Category"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/itemLogo"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icons8_electronics"
+                        android:contentDescription="Item Logo"
+                        />
+                    <TextView
+                        android:id="@+id/itemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Item Name"
+                        android:textSize="20sp"
+                        android:textColor="@color/teal_700"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/itemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Item Description"
+                    android:textSize="20sp"
+                    android:textColor="@color/teal_700"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/itemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Price"
+                android:textSize="20sp"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:textColor="@color/teal_700"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Add"/>
+    </LinearLayout>
+</LinearLayout>

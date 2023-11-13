@@ -1,6 +1,7 @@
 package com.example.walmart
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,6 +16,8 @@ class ShoppingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityShoppingBinding
     private var categoryAdapter: CategoryAdapter?=null
     private var listCategory = ArrayList<Category>()
+    private var user: User?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -29,17 +32,19 @@ class ShoppingActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        var curIntent = intent // getIntent() in Java
-        val temp = curIntent.getSerializableExtra("user")
-        val user = temp as User
-        binding.username.text = "Welcome " + user.username
+        val curIntent = intent // getIntent() in Java
+        user = curIntent.getSerializableExtra("user") as User
+        binding.username.text = "Welcome " + user!!.username
 
-        categoryAdapter = CategoryAdapter(this, listCategory)
+        categoryAdapter = CategoryAdapter(this, listCategory, user!!)
         binding.gvShopCategories.adapter = categoryAdapter
     }
 
-    class CategoryAdapter(context: Context, var listCategory: ArrayList<Category>) : BaseAdapter() {
-        var context: Context?= context
+    class CategoryAdapter(context: Context, private var listCategory: ArrayList<Category>,
+                          private var user: User
+    ) : BaseAdapter() {
+        private var context: Context?= context
+
         override fun getCount(): Int {
             return listCategory.size
         }
@@ -70,6 +75,13 @@ class ShoppingActivity : AppCompatActivity() {
 
             categoryViewBinding.categoryImage.setOnClickListener{
                 Toast.makeText(context, "${category.categoryName} is clicked!", Toast.LENGTH_SHORT).show()
+
+                if (category.categoryName == "Electronics"){
+                    val intent = Intent(context, ItemsActivity::class.java)
+                    intent.putExtra("user", user)
+                    intent.putExtra("categoryName", category.categoryName)
+                    context!!.startActivity(intent)
+                }
             }
 
             // Return the bound view
