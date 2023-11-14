@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:maxLines="1"
+        android:text="hg@gmail.com"
         />
 
     <TextView
@@ -58,7 +59,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:inputType="textPassword"
-        android:maxLines="1" />
+        android:maxLines="1"
+        android:text="password234"
+        />
 
     <TextView
         android:id="@+id/forgot_password"

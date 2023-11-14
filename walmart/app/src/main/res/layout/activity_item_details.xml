@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3pt"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="118dp"
+        android:layout_height="50pt"
+        android:src="@drawable/icons8_electronics"
+        android:typeface="serif"
+        android:contentDescription="Shop Category"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:typeface="serif"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/teal_700"
+        />
+
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Description"
+        android:typeface="serif"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/teal_700"
+        />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Price"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:typeface="serif"
+        android:layout_gravity="center"
+        android:textColor="@color/teal_700"
+        />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:typeface="serif"
+        android:text="Home"/>
+</LinearLayout>
